@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kopong Table Tennis Club</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0b1f3a;
+      color: #ffffff;
+    }
+
+    header {
+      background-color: #07172c;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #00b4d8;
+    }
+
+    nav a {
+      color: #ffffff;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00b4d8;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1593349481032-e99d0f19cc93');
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #00b4d8;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h2 {
+      color: #00b4d8;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .coaches {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .coach {
+      flex: 1 1 250px;
+      background-color: #112d4e;
+      padding: 1rem;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .coach h3 {
+      color: #00b4d8;
+    }
+
+    .join {
+      background-color: #00b4d8;
+      color: #0b1f3a;
+      text-align: center;
+      padding: 2rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+
+    .join a {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: #07172c;
+      color: #ffffff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .join a:hover {
+      background-color: #051222;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #07172c;
+      font-size: 0.9rem;
+      color: #cccccc;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">Kopong TTC</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#coaches">Coaches</a>
+      <a href="#join">Join Us</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to Kopong Table Tennis Club</h1>
+    <p>Affiliated with the Botswana Table Tennis Association, we empower the next generation through the love of table tennis.</p>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>Kopong Table Tennis Club is located in the heart of Kopong and is dedicated to nurturing talent from grassroots level, especially focusing on the youth from local primary schools. We offer a welcoming and vibrant space for young athletes to grow in discipline, skill, and confidence through the sport of table tennis.</p>
+  </section>
+
+  <section class="section" id="coaches">
+    <h2>Meet Our Coaches</h2>
+    <div class="coaches">
+      <div class="coach">
+        <h3>Katlego Segone</h3>
+        <p>Driven by passion and experience, Katlego is a mentor who inspires growth and excellence on and off the table.</p>
+      </div>
+      <div class="coach">
+        <h3>Victor Mmotlaanyane</h3>
+        <p>Victor brings a wealth of knowledge and energy to help young players reach their full potential in the sport.</p>
+      </div>
+    </div>
+  </section>
+
+<section class="section join" id="join">
+  <h2>Join the Club</h2>
+  <p>Are you ready to be part of something exciting? Fill out the form below and we'll get in touch!</p>
+  <form name="club-signup" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="club-signup">
+    <div style="margin-top: 1rem;">
+      <input type="text" name="name" placeholder="Your Full Name" required style="padding: 0.75rem; width: 100%; margin-bottom: 1rem; border-radius: 8px; border: none;">
+      <input type="email" name="email" placeholder="Email Address" required style="padding: 0.75rem; width: 100%; margin-bottom: 1rem; border-radius: 8px; border: none;">
+      <input type="number" name="age" placeholder="Age" required style="padding: 0.75rem; width: 100%; margin-bottom: 1rem; border-radius: 8px; border: none;">
+    </div>
+    <button type="submit" style="padding: 0.75rem 1.5rem; border: none; background-color: #07172c; color: #fff; border-radius: 8px; cursor: pointer;">
+      Submit
+    </button>
+  </form>
+</section>
+
+
+  <footer>
+    &copy; 2025 Kopong Table Tennis Club | Proud Member of the Botswana Table Tennis Association
+  </footer>
+</body>
+
+</html>
